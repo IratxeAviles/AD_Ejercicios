@@ -1,11 +1,21 @@
-package Ejercicios;
+package Ejercicios.Caracteres;
 
 import java.io.*;
 
-public class LeerFichTexto3 {
-    public static void main(String[] args) { // PREGUNTAR POR QUE NO SALEN LOS HINTS DEL PROFILER
+public class EscribirCadenaFich {
+    public static void main(String[] args) throws IOException {
+        String textos[] = {"Texto","de","prueba"};
+
+        File fichero = new File("hula.txt");
+
+        FileWriter fw = new FileWriter(fichero, true);
+        for(int i=0;i<textos.length;i++){
+          fw.write(textos[i]);
+          fw.write(" ");
+          fw.flush(); // Sirve para escribir y cargar, en vez de tener que esperar al close para que escriba
+        }
+        fw.close();
         try {
-            File fichero = new File(args[0]);
             FileReader fic = new FileReader(fichero);
             BufferedReader br = new BufferedReader(fic);
 

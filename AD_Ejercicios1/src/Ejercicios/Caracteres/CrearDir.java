@@ -1,4 +1,4 @@
-package Ejercicios;
+package Ejercicios.Caracteres;
 
 import java.io.File;
 import java.io.IOException;
