@@ -8,15 +8,15 @@ public class LeerFichObject {
         FileInputStream filein = new FileInputStream(fichero);
         ObjectInputStream dataIS = new ObjectInputStream(filein);
 
-        try {
-            while (true) {
-                Persona persona = (Persona) dataIS.readObject();
-                System.out.println("Nombre: " + persona.getNombre() + ", Edad: " + persona.getEdad());
+        while (true) {
+            try {
+                Persona persona = (Persona) dataIS.readObject(); // leer primera persona sin leer de FichData.dat
+                System.out.println(persona.getNombre() + " " + persona.getEdad()); // sacar inforcion de persona por sout
+            } catch (EOFException e) {
+                break;
             }
-        } catch (EOFException e) {
-            System.out.println("error");
         }
         dataIS.close();
     }
 }
-// NO FUNCIONA
+

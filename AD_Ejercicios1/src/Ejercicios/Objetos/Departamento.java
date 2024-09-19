@@ -1,16 +1,16 @@
 package Ejercicios.Objetos;
 
-import java.io.Serializable;
+import java.io.*;
 
 class Departamento implements Serializable {
+    private int num;
     private String nombre;
-    private String loc;
-    private int dep;
+    private String localidad;
 
     public Departamento(String nombre, int dep, String loc) {
         this.nombre = nombre;
-        this.dep = dep;
-        this.loc = loc;
+        this.num = dep;
+        this.localidad = loc;
     }
 
     public Departamento() {
@@ -26,18 +26,20 @@ class Departamento implements Serializable {
     }
 
     public String getLoc() {
-        return loc;
+        return localidad;
     }
 
     public void setLoc(String loc) {
-        this.loc = loc;
+        this.localidad = loc;
     }
 
     public int getDep() {
-        return dep;
+        return num;
     }
 
     public void setDep(int dep) {
-        this.dep = dep;
+        this.num = dep;
     }
+
+
 }
