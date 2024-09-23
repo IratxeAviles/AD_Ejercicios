@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Empleados>
+    <empleado>
+        <id>1</id>
+        <apellido>Aviles....</apellido>
+        <dep>10</dep>
+        <salario>2000.0</salario>
+    </empleado>
+    <empleado>
+        <id>2</id>
+        <apellido>Guinea....</apellido>
+        <dep>20</dep>
+        <salario>1500.0</salario>
+    </empleado>
+    <empleado>
+        <id>3</id>
+        <apellido>Garcia....</apellido>
+        <dep>30</dep>
+        <salario>1700.0</salario>
+    </empleado>
+    <empleado>
+        <id>4</id>
+        <apellido>Lopez.....</apellido>
+        <dep>40</dep>
+        <salario>2200.0</salario>
+    </empleado>
+    <empleado>
+        <id>5</id>
+        <apellido>Ruiz......</apellido>
+        <dep>10</dep>
+        <salario>2100.0</salario>
+    </empleado>
+</Empleados>

@@ -4,7 +4,7 @@ import java.io.*;
 
 public class EscribirFichObject {
     public static void main(String[] args) throws IOException {
-        File fichero = new File("FichData.dat");
+        File fichero = new File("./src/Ficheros/FichPersona.dat");
         FileOutputStream fileout = new FileOutputStream(fichero);
         ObjectOutputStream dataOS = new ObjectOutputStream(fileout);
 
