@@ -1,6 +1,5 @@
-package Ejercicios;
+package Ejercicios.DB4O;
 
-import Ejemplo_DB4O.Persona;
 import com.db4o.Db4oEmbedded;
 import com.db4o.ObjectContainer;
 

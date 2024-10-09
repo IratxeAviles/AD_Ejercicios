@@ -1,23 +1,23 @@
-package Ejercicios;
+package Ejercicios.DB4O;
 
 public class Empleado {
-    private int id;
+    private Integer id; // para poder poner "null"
     private String apellido;
     private String tipo;
-    private int departamento;
+    private Integer departamento;
 
-    public Empleado(int id, String apellido, String tipo, int departamento) {
+    public Empleado(Integer id, String apellido, String tipo, Integer departamento) {
         this.id = id;
         this.apellido = apellido;
         this.tipo = tipo;
         this.departamento = departamento;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -37,11 +37,11 @@ public class Empleado {
         this.tipo = tipo;
     }
 
-    public int getDepartamento() {
+    public Integer getDepartamento() {
         return departamento;
     }
 
-    public void setDepartamento(int departamento) {
+    public void setDepartamento(Integer departamento) {
         this.departamento = departamento;
     }
 }

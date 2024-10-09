@@ -1,21 +1,21 @@
-package Ejercicios;
+package Ejercicios.DB4O;
 
 public class Departamento {
-    private int id;
+    private Integer id;
     private String nombre;
     private String localidad;
 
-    public Departamento(int id, String nombre, String localidad) {
+    public Departamento(Integer id, String nombre, String localidad) {
         this.id = id;
         this.nombre = nombre;
         this.localidad = localidad;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
